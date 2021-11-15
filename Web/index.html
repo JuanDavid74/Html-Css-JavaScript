@@ -1,0 +1,187 @@
+<!-- Todo webside tiene dos partes, el front-end y el back-end
+el front-end : es la interfaz donde visualizas y donde interactuas
+el back-end es la parte que impulsa el front-end.
+
+de esta manera existen 3 tipos de programadores : front-end, back-end and fullStack
+HTML,CSS,javaScript
+HTML: lenguaje marcado de hipertexto.
+CSS: cascading stylesheet
+
+FrameWorks: librerias vienen de codigo que podemos reutilizar, como react, angularo vue
+nos ayudan a construir paginas mas rapidamente.
+
+react: es la mas popular del espacio
+
+version control Systems: git(most popular), subversion, mercurial and more
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>ZimaBlue</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--  <link href="style.css" rel="stylesheet" type="text/css" /> -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- las tres siguientes líneas son un truco para obtener elementos semánticos de HTML5 que funcionan en versiones de Internet Explorer antiguas -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- Aquí empieza el encabezado principal que se mantendrá en todas las páginas del sitio web -->
+
+    <header>
+      <h1>Principal</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Nuestro equipo</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+
+      <!-- Un formulario de búsqueda es una forma no-lineal de hacer búsquedas en un sitio web. -->
+
+      <form>
+        <input
+          type="search"
+          name="q"
+          placeholder="Buscar"
+          class="inputSearch"
+        />
+        <input type="submit" value="¡Vamos!" class="inputClick" />
+      </form>
+    </nav>
+
+    <!-- Aquí está el contenido principal de nuestra página -->
+    <article class="gameNumber">
+      <h1>Number guessing game</h1>
+
+      <p class="game" style="font: bold">
+        We have selected a random number between 1 and 100. See if you can guess
+        it in 10 turns or fewer. We'll tell you if your guess was too high or
+        too low.
+      </p>
+
+      <div class="form">
+        <label for="guessField" class="labelsito" style="font: bold"
+          >Enter a guess:
+        </label>
+        <input type="text" id="guessField" class="guessField" />
+        <input type="submit" value="Submit guess" class="guessSubmit" />
+        <input type="button" value="Exit" class="exitSubmit" />
+      </div>
+
+      <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+      </div>
+    </article>
+
+    <main>
+      <!-- Contiene un artículo -->
+      <article>
+        <h2 class="primero">Título del artículo</h2>
+
+        <p>
+          La verdadera razon de todo la semantica aplicada es increiblemente
+          falsa, y todo el afecto existe, talvez nos podamos acercar bien pero
+          tocarlo, a que costo y cuantas veces lo veremos? Talvez no tendremos
+          una respuesta al intentar buscar.
+        </p>
+
+        <h3>Subsección</h3>
+
+        <p>
+          Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem.
+          Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.
+        </p>
+
+        <p>
+          Pelientesque auctor nisi id magna consequat sagittis. Curabitur
+          dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet.
+          Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.
+        </p>
+
+        <h3>Otra subsección</h3>
+
+        <p>
+          Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum
+          soclis natoque penatibus et manis dis parturient montes, nascetur
+          ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem
+          facilisis semper ac in est.
+        </p>
+
+        <p>
+          Vivamus fermentum semper porta. Nunc diam velit, adipscing ut
+          tristique vitae sagittis vel odio. Maecenas convallis ullamcorper
+          ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi
+          diam iaculis velit, is fringille sem nunc vet mi.
+        </p>
+      </article>
+
+      <!-- el contenido aparte también se puede anidar dentro del contenido principal -->
+      <aside>
+        <h2>Relacionado</h2>
+
+        <ul>
+          <li><a href="#">Temas de interes</a></li>
+          <li><a href="#">Te gustaria saber acerca de...</a></li>
+          <li><a href="#">ZimaBlue y su ultimo proposito</a></li>
+          <li><a href="#">Nunca deja de llover</a></li>
+          <li><a href="#">Referencia bibliograficas</a></li>
+        </ul>
+      </aside>
+    </main>
+
+    <main>
+      <article class="part2">
+        <h4>Tomo dos</h4>
+
+        <p>
+          Dentro de las mecanicas impuestas en html tenemos diferentes metodos
+          para diferentes cosas y aqui estamos para verlas todas, no te
+          preocupes acerca de esto, ya lo veras pronto. <br />
+          dentro de lo pronto da clik
+          <a href="https://www.youtube.com/watch?v=Qx2zU1c2LFM" target="_blank">
+            aqui
+          </a>
+          para ver una cancion al azar(estamos trabajando en eso no te
+          procupes).
+        </p>
+        <p>
+          todo lo visto en html se vera probado en esta pagina, cualquier bug
+          sera solucionado
+        </p>
+
+        <aside class="linksup">
+          <ul class="links">
+            <li><a href="">song 1</a></li>
+            <li>song 2</li>
+            <li>song 3</li>
+          </ul>
+        </aside>
+      </article>
+    </main>
+
+    <!-- Y aquí está nuestro pie de página principal que se utiliza en todas las páginas de nuestro sitio web -->
+
+    <footer>
+      <p>©Copyright 2050 de nadie. Todos los derechos revertidos.</p>
+    </footer>
+
+    <script src="codigo.js"></script>
+  </body>
+</html>

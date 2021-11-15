@@ -1,0 +1,196 @@
+/* || General setup */
+
+html {
+  font-size: 10px;
+  background-color: #a9a9a9;
+}
+
+body {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* || typography */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Sonsie One", cursive;
+  color: black;
+}
+
+p,
+input,
+li {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: black;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+}
+
+article.gameNumber {
+  background-color: rgb(221, 94, 253);
+}
+
+p.game,
+guesess,
+lastResult,
+lowOrhi {
+  text-align: center;
+  font-size: 2rem;
+  font: bolder;
+}
+
+div.form,
+div.resultParas,
+p.guesses,
+p.lastResult,
+p.lowOrHi {
+  text-align: center;
+  font-size: 20px;
+  font: italic;
+}
+
+input.exitSubmit {
+  width: 50px;
+}
+
+h2.primero {
+  font-size: 3rem;
+  text-align: center;
+  size: 5px;
+  border-style: dashed;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+p,
+li {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+/* || header layout */
+
+nav,
+article,
+aside,
+footer {
+  background-color: white;
+  padding: 1%;
+}
+
+nav {
+  height: 50px;
+  background-color: #ff80ff;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+nav form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 2em;
+}
+
+input {
+  font-size: 1.6rem;
+  height: 32px;
+}
+
+input[type="search"] {
+  flex: 3;
+}
+
+input[type="submit"] {
+  flex: 1;
+  margin-left: 1rem;
+  background: #333;
+  border: 0;
+  color: white;
+}
+
+/* || main layout */
+
+main {
+  display: flex;
+}
+
+article {
+  flex: 4;
+}
+
+aside {
+  flex: 1;
+  margin-left: 10px;
+  background-color: #ff80ff;
+}
+
+aside li {
+  padding-bottom: 10px;
+}
+
+article.part2 {
+  background-color: #a9a9a9;
+}
+
+h4 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+/* a:link {
+  color: aqua;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+  background: #cdfeaa;
+}
+
+a :visited {
+  color: aquamarine;
+}
+*/
+
+.linksup {
+  background-color: #bb7cf6;
+}
+
+.links {
+  list-style-type: initial;
+}
+
+footer {
+  margin-top: 10px;
+}
