@@ -5,9 +5,19 @@ html {
   background-color: #a9a9a9;
 }
 
-body {
+@font-face {
+  font-family: "Sonsie One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.gstatic.com/s/sonsieone/v11/PbymFmP_EAnPqbKaoc18UVy21g.ttf")
+    format("truetype");
+}
+
+body,
+.mainDos {
   width: 70%;
   margin: 0 auto;
+  background-image: url("images/whale.jpg");
 }
 
 /* || typography */
@@ -35,7 +45,7 @@ h1 {
 }
 
 article.gameNumber {
-  background-color: rgb(221, 94, 253);
+  background-color: rgb(16, 148, 236);
 }
 
 p.game,
@@ -90,7 +100,7 @@ footer {
 
 nav {
   height: 50px;
-  background-color: #ff80ff;
+  background-color: #698cd6;
   display: flex;
   margin-bottom: 10px;
 }
@@ -154,7 +164,7 @@ article {
 aside {
   flex: 1;
   margin-left: 10px;
-  background-color: #ff80ff;
+  background-color: #084ac3;
 }
 
 aside li {
@@ -184,7 +194,7 @@ a :visited {
 */
 
 .linksup {
-  background-color: #bb7cf6;
+  background-color: #4c40ec;
 }
 
 .links {
